@@ -9,9 +9,11 @@ const app = express();
 connectDB();
 
 // Middlewares (CORS setup jo local aur live dono frontend ko allow karega)
+// Middlewares (CORS setup jo local aur live dono frontend ko allow karega)
 const allowedOrigins = [
   'http://localhost:5173',                       // Aapka local development
-  'https://nimble-toffee-50a5a3.netlify.app'     // Aapka deployed Netlify frontend
+  'https://nimble-toffee-50a5a3.netlify.app',     // Aapka deployed Netlify frontend
+  'https://extraeffort-n3li.vercel.app'          // 🔥 AAPKA NAYA VERCEL URL (YAHAN ADD KIYA)
 ];
 
 app.use(cors({
